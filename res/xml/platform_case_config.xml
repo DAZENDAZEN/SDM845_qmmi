@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (c) 2017 Qualcomm Technologies, Inc.
+    All Rights Reserved.
+    Confidential and Proprietary - Qualcomm Technologies, Inc.
+-->
+<platform>
+
+    <!--default enable modules for ui mode -->
+
+    <variable name="basic_ui_testcases">
+        SYSTEM_INFO,
+        AUDIO_FTM_SPEAKER_PLAYFILE,        
+        AUDIO_FTM_MIC1_RECORD,
+        LCD,
+        LCD_IMAGE,
+        LED,
+        KEY,
+	LCD_BACKLIGHT,
+        CAMERA_RGB,
+        CAMERA_FISHEYE,
+        GYROSCOPE,
+        GRAVITY_SENSOR,
+        LIGHT_SENSOR,
+        MAGNETIC_SENSOR,
+        PROXIMITY_SENSOR,
+        SDCARD,
+        STORAGE,
+        MEMORY,
+        SIMCARD1,
+        WIFI,
+        BLUETOOTH,
+        GPS,
+        NFC
+    </variable>
+
+    <!--default enable modules for pcba mode -->
+    <variable name="basic_pcba_testcases">
+        SYSTEM_INFO,
+        LCD,
+        LCD_BLUE,
+        LCD_RED,
+        LCD_GREEN,
+        LCD_BLACK,
+        LCD_WHITE,
+        LCD_IMAGE,
+        LED,
+        KEY,
+	LCD_BACKLIGHT,
+        AUDIO_FTM_HANDSET_PLAYTONE,
+        AUDIO_FTM_SPEAKER_PLAYTONE, 
+        AUDIO_FTM_HANDSET_PLAYFILE,
+        AUDIO_FTM_SPEAKER_PLAYFILE,       
+        AUDIO_FTM_MIC1_RECORD,
+        AUDIO_FTM_MIC2_RECORD,
+        AUDIO_FTM_MIC3_RECORD,
+        AUDIO_FTM_MIC4_RECORD,
+        AUDIO_FTM_MIC5_RECORD,
+        AUDIO_FTM_MIC6_RECORD,
+        AUDIO_FTM_MIC1_SPEAKER_LOOPBACK,    
+        AUDIO_FTM_SPEAKER_MIC1_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC1_LOOPBACK,  
+        AUDIO_FTM_SPEAKER_MIC2_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC2_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC3_LOOPBACK,
+        CAMERA_BACK_AUX_FACE_DETECT,
+        CAMERA_BACK_AUX_SNAPSHOT,
+        CAMERA_BACK_MAIN_FACE_DETECT,
+        CAMERA_BACK_MAIN_SNAPSHOT,
+        CAMERA_FRONT_FACE_DETECT,
+        CAMERA_FRONT_SNAPSHOT,
+        GYROSCOPE,
+        GRAVITY_SENSOR,
+        LIGHT_SENSOR,        
+        PROXIMITY_SENSOR,
+        SDCARD,
+        STORAGE,
+        MEMORY,
+        SIMCARD1,
+        WIFI,
+        BLUETOOTH,
+        GPS,
+        NFC
+    </variable>
+
+    <!--default enable modules for pcba mode -->
+    <variable name="basic_assemble_testcases">
+        SYSTEM_INFO,	
+        LCD,
+        LCD_BLUE,
+        LCD_RED,
+        LCD_GREEN,
+        LCD_BLACK,
+        LCD_WHITE,
+        LCD_IMAGE,
+        LED,     
+        KEY,
+	LCD_BACKLIGHT,        
+        AUDIO_FTM_HANDSET_PLAYTONE,
+        AUDIO_FTM_SPEAKER_PLAYTONE,  
+        AUDIO_FTM_HANDSET_PLAYFILE,
+        AUDIO_FTM_SPEAKER_PLAYFILE,      
+        AUDIO_FTM_MIC1_RECORD,
+        AUDIO_FTM_MIC2_RECORD,
+        AUDIO_FTM_MIC3_RECORD,
+        AUDIO_FTM_MIC4_RECORD,
+        AUDIO_FTM_MIC5_RECORD,
+        AUDIO_FTM_MIC6_RECORD,
+        AUDIO_FTM_MIC1_SPEAKER_LOOPBACK,  
+        AUDIO_FTM_SPEAKER_MIC1_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC1_LOOPBACK,  
+        AUDIO_FTM_SPEAKER_MIC2_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC2_LOOPBACK,
+        AUDIO_FTM_HANDSET_MIC3_LOOPBACK,
+        CAMERA_RGB,        
+        CAMERA_BACK_AUX,
+        CAMERA_FISHEYE,
+        CAMERA_BACK_MAIN_SNAPSHOT,
+        CAMERA_FRONT_SNAPSHOT,  
+        GYROSCOPE,
+        GRAVITY_SENSOR,
+        LIGHT_SENSOR,       
+        PROXIMITY_SENSOR,        
+        SDCARD,
+        STORAGE,
+        MEMORY,
+        SIMCARD1,        
+        WIFI,
+        FM,
+        BLUETOOTH,
+        GPS,
+        NFC
+    </variable>
+
+    <soc
+        name="default"
+        subtype_id="*">
+        <ui_testcases>${basic_ui_testcases}</ui_testcases>
+        <pcba_testcases>${basic_pcba_testcases}</pcba_testcases>
+        <assemble_testcases>${basic_assemble_testcases}</assemble_testcases>
+    </soc>
+
+</platform>
